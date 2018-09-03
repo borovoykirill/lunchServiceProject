@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* todo MAIN STYLESHEET */
+
+@font-face {
+    font-family: 'betinascriptcbold';
+    src: url('../fonts/betinascriptc-bold-webfont.woff2') format('woff2'),
+    url('../fonts/betinascriptc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
