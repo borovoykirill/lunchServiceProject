@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* todo MAIN STYLESHEET */
 
+/* todo MAIN STYLESHEET */
 @font-face {
     font-family: 'betinascriptcbold';
     src: url('../fonts/betinascriptc-bold-webfont.woff2') format('woff2'),
@@ -31,4 +31,117 @@
     url('../fonts/mullerthin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, * ::before, * ::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* todo HEADER*/
+.main-header {
+    position: relative;
+    height: 800px;
+    color: #FFFFFF;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: 1;
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 1200px;
+    font-family: 'mullethin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 23px;
+
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.schedule {
+    margin-left: 358px;
+    padding: 0;
+    list-style: none;
+    font-family: 'mullethin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.main-header-logo {
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+.phone-number {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.phone-number li:nth-child(2) {
+    margin-top: 10px;
+}
+
+.user-basket {
+    margin-left: 71px;
+    padding: 0;
+    list-style: none;
+}
+
+.user-basket a {
+    border-bottom: 1px dashed  #FFFFFF ;
 }
