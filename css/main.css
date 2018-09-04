@@ -81,23 +81,25 @@ img {
 
 
 /* todo HEADER*/
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+}
+.start-video {
+    position: absolute;
+    top: 700px;
+    left: 700px;
+    z-index: 2;
+    cursor: pointer;
+}
+
 .main-header {
     position: relative;
     height: 800px;
     color: #FFFFFF;
-}
-
-.video-bg {
-    position: absolute;
-    z-index: 1;
-}
-
-.start-video {
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    top: 700px;
-    left: 700px;
 }
 
 .header-wrapper {
@@ -116,7 +118,7 @@ img {
 
 .user-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .user-info a {
@@ -124,19 +126,18 @@ img {
 }
 
 .schedule {
-    margin-left: 212px;
+    margin-left: 230px;
     padding: 0;
     list-style: none;
 }
 
 .main-header-logo {
-    margin-left: 44px;
-
+    margin-left: 47px;
 }
 
 .phone-number {
     margin-top:45px;
-    margin-left: 44px;
+    margin-right: 70px;
     padding: 0;
     list-style: none;
 }
@@ -146,8 +147,8 @@ img {
 }
 
 .user-basket {
-    margin-left: 190px;
     margin-top: 85px;
+    margin-right: 10px;
     padding: 0;
     list-style: none;
 }
@@ -227,3 +228,88 @@ img {
     top: -45px;
     left: 100px;
 }
+
+/* todo MENU*/
+.content {
+    background: url("../img/wood_background.jpg") top center no-repeat;
+    height: 800px;
+}
+
+.menu {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.menu h2 {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    padding: 0;
+    font-family: 'betinascriptcbold';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 541px;
+    font-family: 'mullermedium';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu-list li:nth-child(2),
+.menu-list li:nth-child(3) {
+    padding-left: 30px;
+}
+
+.menu-item b {
+    position: relative;
+    padding: 15px 130px;
+    background-color: #262626;
+    font-size: 28px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.menu-item b:before {
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: 132px;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #262626;
+}
+
+.menu-item p {
+    margin-top: 45px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 126px;
+    border-radius: 35px;
+    font: inherit;
+    font-size: 28px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    background-color: #ffb300;
+    border: none;
+}
+
+
+
