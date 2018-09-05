@@ -232,11 +232,11 @@ img {
 /* todo MENU*/
 .content {
     background: url("../img/wood_background.jpg") top center no-repeat;
-    height: 800px;
 }
 
 .menu {
     width: 1200px;
+    height: 800px;
     margin: 0 auto;
     padding: 0 10px;
     overflow: hidden;
@@ -311,5 +311,128 @@ img {
     border: none;
 }
 
+/* todo PROMOTION */
+.promotion {
+    width: 1440px;
+    height: 515px;
 
+}
 
+.slides {
+    position: relative;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: 'mullermedium';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.slide {
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide p {
+    text-align: center;
+    padding-top: 130px;
+    font-size: 62px;
+    line-height: 26px;
+}
+
+.slide:nth-of-type(1) {
+    background: url("../img/slider_slide1.png")  top center no-repeat;
+}
+
+.slide:nth-of-type(2) {
+
+}
+
+.slide:nth-of-type(3) {
+}
+
+/*
+.slide:nth-of-type(1):hover {
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+}
+*/
+
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons{
+    position: relative;
+}
+
+.controls-previous {
+    position: absolute;
+    left: 70px;
+    top:-300px;
+    z-index: 10;
+    font-size: 0px;
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.controls-previous:hover,
+.controls-previous:focus{
+    color: #ffb300;
+}
+
+.controls-next {
+    position: absolute;
+    right: 70px;
+    top:-300px;
+    z-index: 10;
+    font-size: 0px;
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.controls-next:hover,
+.controls-next:focus{
+    color: #ffb300;
+}
+
+/* todo FOOTER */
+.main-footer {
+    height: 313px;
+}
+
+.footer-wrapper {
+    display: flex;
+}
