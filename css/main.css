@@ -431,8 +431,74 @@ img {
 /* todo FOOTER */
 .main-footer {
     height: 313px;
+    background-image:
+            url("../img/yellow_figure.png"),
+            url("../img/wood_background.jpg");
+    background-position: 260px -780px, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'mullerthin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .footer-wrapper {
     display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-top: 45px;
+    margin-left: 109px;
+}
+
+.main-footer h3 {
+    font-family: 'mullerbold';
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+.footer-contacts h3 {
+    margin-top: 45px;
+    margin-left: 43px;
+}
+
+.contacts-list {
+    margin-left: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-list li:nth-child(3) {
+    padding-top: 20px;
+}
+
+.footer-social h3 {
+    margin-top: 45px;
+
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-copyright {
+    margin-top: 261px;
+    margin-right: 110px;
+}
+
+.footer-copyright a {
+    color: #000000;
+    font-size: 16px;
+    line-height: 41px;
+}
+
+.studio {
+    font-family: 'mullerbold';
+    font-weight: normal;
+    font-style: normal;
 }
